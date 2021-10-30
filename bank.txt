@@ -1,0 +1,34 @@
+class bank:
+    bank_name="SBI"
+    capable=10000
+    def deposit_amount(self):
+        self.deposit=int(input("enter amount to deposit:"))
+        bank.capable=self.deposit+bank.capable
+        b.pat()
+        print("your account balance is %d",(bank.capable),bank.bank_name)
+    def withdraw_amount(self):
+        b.pat()
+        print("in your account balance is present %d you can withdraw from this amount %d",(bank.capable),bank.bank_name)
+        withdraw=int(input("enter withdraw amount:"))
+        bank.capable=bank.capable-withdraw
+        b.pat()
+        if bank.capable>withdraw:
+            print("in your accout present balance is %d",(bank.capable),bank.bank_name)
+        else:
+            print("insufficent balance")
+    def pat(self):
+        for i in range(40):
+            print("*",end="")
+        print()
+pincode_searching=[2212,1504,1122,3344,4454]
+print("please enter your pincode")
+your_pincode=int(input("enter your pin:"))
+if your_pincode in pincode_searching:
+    print("welcome to SBI BANK")
+    print("in your account balance is present 10000")
+    b=bank()
+    b.deposit_amount()
+    b.withdraw_amount()
+    b.pat()
+else:
+    print("enter valid pin")
