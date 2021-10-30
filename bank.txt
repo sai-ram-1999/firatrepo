@@ -1,3 +1,4 @@
+#bank sample code
 class bank:
     bank_name="SBI"
     capable=10000
@@ -15,7 +16,7 @@ class bank:
         if bank.capable>withdraw:
             print("in your accout present balance is %d",(bank.capable),bank.bank_name)
         else:
-            print("insufficent balance")
+            print("insufficent balance in your account")
     def pat(self):
         for i in range(40):
             print("*",end="")
@@ -31,4 +32,4 @@ if your_pincode in pincode_searching:
     b.withdraw_amount()
     b.pat()
 else:
-    print("enter valid pin")
+    print("Please enter valid pin")
