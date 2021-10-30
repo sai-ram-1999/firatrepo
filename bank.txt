@@ -1,4 +1,4 @@
-#bank sample code
+#bank sample codes
 class bank:
     bank_name="SBI"
     capable=10000
@@ -32,4 +32,4 @@ if your_pincode in pincode_searching:
     b.withdraw_amount()
     b.pat()
 else:
-    print("Please enter valid pin")
+    print("Please enter valid, pin")
